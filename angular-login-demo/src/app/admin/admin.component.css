@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+h1{
+    color:#ffff;
+
+    background:#663a82;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    width: 800px;
+    margin: 16px auto;
+    font-size: 25px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    border-color: #000000;
+
+}
+
+
+
