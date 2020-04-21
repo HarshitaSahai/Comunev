@@ -1,0 +1,59 @@
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+
+</script>
+
+<h3 style="text-align:center">
+    Harshita Sahai Internship Assignment
+  </h3>
+  <div class="login">
+    <h2 class="login-header">Log in</h2>
+    <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
+  
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.fname.errors }">
+        <input type="text" placeholder="First Name" formControlName="fname" >
+      </p>
+
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.lname.errors }">
+        <input type="text" placeholder="Last Name" formControlName="lname" >
+      </p>
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.uname.errors }">
+        <input type="text" placeholder="Username" formControlName="uname" >
+      </p>
+  
+      <div *ngIf="isSubmitted && formControls.uname.errors" class="help-block">
+        <div *ngIf="formControls.uname.errors.required">
+          <label>Username is required</label> </div>
+      </div>
+
+     <p [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
+        <input type="password" placeholder="Password" formControlName="password">
+      </p>
+
+
+  
+      <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+        <div *ngIf="formControls.password.errors.required">
+          <label>Password is required</label> </div>
+      </div>
+      
+      
+    
+      <p>
+        <input type="date" name="StartDate" id="userdate"  required />
+
+    </p>
+    <p>
+     <select>
+          <option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </option>
+        </select>
+      </p>
+      <p>
+        <input type="submit" value="Log in" />
+      </p>
+    </form>
+  </div>

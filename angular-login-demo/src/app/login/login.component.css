@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+h3{
+    color:#ffff;
+}
+.login {
+  width: 800px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #b491c8;
+}
+
+.login-header {
+  background:#663a82;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+.login select{
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+.login label {
+ 
+  width: 100%;
+  color:grey;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input {
+  background: #fff;
+  border-color: #bbb;
+  color: #000000;
+}
+.login select {
+  background: #fff;
+  border-color: #bbb;
+  color: #000000;
+}
+
+.login select{
+  border-color: #000000;
+}
+.login option{
+  border-color: #000000;
+}
+.login input{
+  border-color: #000000;
+}
+
+.login input[type="submit"] {
+  background: #663a82;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #3c1361
+}
+
+.login input[type="submit"]:focus {
+  border-color:#663a82;
+}
